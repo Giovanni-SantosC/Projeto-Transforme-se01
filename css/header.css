@@ -1,0 +1,106 @@
+header {
+   background-color: rgb(124, 61, 173);
+   /* MUDAR COR DE FUNDO */
+   display: flex;
+   /* ativar o auto-layout */
+   gap: 154px;
+   /* COLOCAR ESPAÇAMENTO ENTRE OS ELEMENTOS */
+   justify-content: space-around;
+   /* JUSTIFICANDO NO X */
+   align-items: center;
+   /* JUSTIFICANDO NO Y */
+   /* MUDAR ALTURA DO ELEMENTO */
+   width: 100%;
+   /* MUDAR LARGURA DO ELEMENTO */
+   border-radius: 100px;
+   /* ARREDONDAR AS BORDAS */
+   flex-wrap: wrap;
+   padding: 20px;
+}
+
+nav ol {
+   display: flex;
+   /* ativar o auto-layout */
+   gap: 40px;
+   /* COLOCAR ESPAÇAMENTO ENTRE OS ELEMENTOS */
+   list-style-type: none;
+   /* TIRAR  O ESTILO DA LISTA */
+   padding: 0px;
+   /* TIRAR O PADDING PADRÃO DA LISTA */
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: white;
+
+   & a {
+      color: white;
+      text-decoration: none;
+      transition: ease-in 0.4s;
+
+      &:hover {
+         text-decoration: underline;
+         color: yellow;
+         transform: scale(1.2);
+      }
+
+   }
+
+
+   & li {
+
+      transition: ease-in 0.4s;
+
+      &:hover {
+         text-decoration: underline;
+         color: yellow;
+         transform: scale(1.2);
+         cursor: pointer;
+      }
+   }
+
+
+}
+
+
+
+
+
+
+div.botoes-header {
+   /* PADDING - BORDA PARA DENTRO */
+   /* MARGIN - BORDA PARA FORA */
+   display: flex;
+   gap: 50px;
+
+   & .botoes {
+      width: 140px;
+      padding: 8px 0;
+      border-radius: 15px;
+      border: none;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      cursor: pointer;
+   }
+
+   & .entrar {
+      background-color: rgb(235, 232, 72);
+      transition: ease-in 0.5s;
+   }
+
+   & .entrar:hover {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+   }
+
+   & .cadastrar-se {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      transition: ease-in 0.5s;
+
+      &:hover {
+         background-color: rgb(235, 232, 72);
+         border: none;
+         color: black;
+      }
+   }
+
+}
